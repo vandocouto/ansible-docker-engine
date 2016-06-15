@@ -1,0 +1,11 @@
+---
+# tasks file for docker-engine
+- include: repositorio.yml
+- include: mkdir.yml
+- include: update.yml
+  when: ansible_os_family == 'RedHat'
+- include: install.yml
+  when: ansible_os_family == 'RedHat'
+- include: git-clone.yml
+- include: build-mongodb.yml
+

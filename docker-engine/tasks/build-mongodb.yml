@@ -1,0 +1,3 @@
+---
+- name: "build do MongoDB"
+  command:  docker build -f /root/Dockerfile-mongodb/Dockerfile -t centos:mongodb .

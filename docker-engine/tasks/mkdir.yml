@@ -1,0 +1,4 @@
+---
+- name: "Criando os diretorios"
+  file: path=/root/Dockerfile-mongodb state=directory
+

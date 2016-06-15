@@ -1,0 +1,4 @@
+---
+- name: "Clonando o dockerfiles MongoDB"
+  git: repo=https://github.com/vandocouto/docker-mongodb.git dest=/root/Dockerfile-mongodb/ refspec=+refs/pull/*:refs/heads/*
+

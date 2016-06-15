@@ -1,0 +1,4 @@
+- hosts: docker-engine
+  roles:
+  - docker-engine
+

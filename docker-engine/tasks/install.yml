@@ -1,0 +1,12 @@
+--- 
+- name: "Pacote git"
+  yum: name=git state=latest
+
+- name: "Pacote docker-engine"
+  yum: name=docker-engine state=latest
+
+- name: "Iniciando o docker-engine"
+  service: name=docker state=started
+
+- name: "Habilitando o docker-engine para iniciar com o sistema operacional"
+  service: name=docker enabled=yes

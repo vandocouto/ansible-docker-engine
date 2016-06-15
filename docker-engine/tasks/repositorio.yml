@@ -1,0 +1,4 @@
+---
+- name: "Adicionando o repositorio - docker.repo"
+  template: src=docker.repo dest=/etc/yum.repos.d/docker.repo owner=root group=root mode=0644
+
